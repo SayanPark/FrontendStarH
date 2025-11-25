@@ -5,7 +5,7 @@ export default function Testimonials() {
   return (
     <section id="testimonials" className="py-24 bg-gradient-to-b from-emerald-50 to-white">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="transition-all duration-1000 opacity-0 translate-y-10">
+        <div className="transition-all duration-1000 opacity-100 translate-y-10">
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-100 text-emerald-700 rounded-full mb-6">
               <span className="text-sm font-medium">نظرات مشتریان</span>
@@ -22,7 +22,7 @@ export default function Testimonials() {
           </div>
         </div>
         <div className="grid md:grid-cols-3 gap-8 text-xl">
-          <div className="transition-all duration-1000 opacity-0 translate-y-10">
+          <div className="transition-all duration-1000 opacity-100 translate-y-10">
             <div className="rounded-xl text-card-foreground group hover:shadow-xl transition-all duration-300 border-0 shadow-lg hover:-translate-y-2 bg-white h-full">
               <div className="p-8">
                 <div className="flex items-center gap-1 mb-6">
@@ -60,7 +60,7 @@ export default function Testimonials() {
               </div>
             </div>
           </div>
-          <div className="transition-all duration-1000 opacity-0 translate-y-10">
+          <div className="transition-all duration-1000 opacity-100 translate-y-10">
             <div className="rounded-xl text-card-foreground group hover:shadow-xl transition-all duration-300 border-0 shadow-lg hover:-translate-y-2 bg-white h-full">
               <div className="p-8">
                 <div className="flex items-center gap-1 mb-6">
@@ -98,7 +98,7 @@ export default function Testimonials() {
               </div>
             </div>
           </div>
-          <div className="transition-all duration-1000 opacity-0 translate-y-10">
+          <div className="transition-all duration-1000 opacity-100 translate-y-10">
             <div className="rounded-xl text-card-foreground group hover:shadow-xl transition-all duration-300 border-0 shadow-lg hover:-translate-y-2 bg-white h-full">
               <div className="p-8">
                 <div className="flex items-center gap-1 mb-6">
@@ -138,7 +138,7 @@ export default function Testimonials() {
             </div>
           </div>
         </div>
-        <div className="transition-all duration-1000 opacity-0 translate-y-10">
+        <div className="transition-all duration-1000 opacity-100 translate-y-10">
           <div className="text-center mt-16">
             <div className="inline-flex items-center gap-4 px-8 py-4 bg-white rounded-2xl shadow-lg">
               <div className="flex items-center gap-1">

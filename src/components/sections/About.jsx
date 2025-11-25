@@ -5,7 +5,7 @@ export default function About() {
   return (
     <section id="about" className="py-24 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="transition-all duration-1000 opacity-0 translate-y-10">
+        <div className="transition-all duration-1000">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-100 text-emerald-700 rounded-full mb-6">
@@ -17,7 +17,7 @@ export default function About() {
               </h2>
               <p className="text-xl text-gray-600 leading-relaxed mb-8">
                 باربری نیلگون خلیج فارس (مؤسسه اصفهان سابق) از سال ۱۳۴۰
-                در استان<strong>کرمانشاه</strong> در صدر نوآوری زنجیره
+                در استان <strong>کرمانشاه </strong> در صدر نوآوری زنجیره
                 تامین بوده و با ترکیب فناوری پیشرفته و مسئولیت
                 زیست‌محیطی، نتایج استثنایی ارائه می‌دهد.
               </p>
@@ -77,7 +77,7 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div className="transition-all duration-1000 opacity-0 translate-y-10 mt-20">
+        <div className="transition-all duration-1000 mt-20">
           <h3 className="text-center text-2xl font-bold text-gray-900 mb-8">دستاوردهای نیلگون لجستیک در یک نگاه</h3>
           <div className="stats-section grid grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">

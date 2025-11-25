@@ -12,13 +12,11 @@ export default function Mainpage() {
 
   return (
     <main className="pt-20">
-      <div className="overflow-x-hidden">
-        <Relative/>
-        <About/>
-        <Services/>
-        <Testimonials/>
-        <Contact/>
-      </div>
+      <Relative/>
+      <About/>
+      <Services/>
+      <Testimonials/>
+      <Contact/>
     </main>
   );
 }

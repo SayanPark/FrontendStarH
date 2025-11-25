@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <section id="contact" className="py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="transition-all duration-1000 opacity-0 translate-y-10">
+        <div className="transition-all duration-1000 opacity-100 translate-y-10">
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-100 text-emerald-700 rounded-full mb-6">
               <span className="text-sm font-medium">تماس با ما</span>
@@ -22,7 +22,7 @@ export default function Contact() {
           </div>
         </div>
         <div className="grid lg:grid-cols-2 gap-16">
-          <div className="transition-all duration-1000 opacity-0 translate-y-10 space-y-8">
+          <div className="transition-all duration-1000 opacity-100 translate-y-10 space-y-8">
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-8">اطلاعات تماس</h3>
               <div className="grid sm:grid-cols-2 gap-6">
@@ -137,7 +137,7 @@ export default function Contact() {
               </div>
             </div>
           </div>
-          <div className="transition-all duration-1000 opacity-0 translate-y-10">
+          <div className="transition-all duration-1000 opacity-100 translate-y-10">
             <div className="rounded-xl bg-card text-card-foreground border-0 shadow-xl">
               <div className="p-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-6">پیام خود را برای ما ارسال کنید</h3>
