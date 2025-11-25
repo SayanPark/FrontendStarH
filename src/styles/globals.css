@@ -126,12 +126,10 @@
   border-style: solid;
   border-color: #e5e7eb;
 }
-:before,
-:after {
+:before, :after {
   --tw-content: "";
 }
-html,
-:host {
+html, :host {
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
   -moz-tab-size: 4;
@@ -162,12 +160,7 @@ abbr:where([title]) {
   -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-weight: inherit;
 }
@@ -175,14 +168,10 @@ a {
   color: inherit;
   text-decoration: inherit;
 }
-b,
-strong {
+b, strong {
   font-weight: bolder;
 }
-code,
-kbd,
-samp,
-pre {
+code, kbd, samp, pre {
   font-family:
     ui-monospace,
     SFMono-Regular,
@@ -199,8 +188,7 @@ pre {
 small {
   font-size: 80%;
 }
-sub,
-sup {
+sub, sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -217,11 +205,7 @@ table {
   border-color: inherit;
   border-collapse: collapse;
 }
-button,
-input,
-optgroup,
-select,
-textarea {
+button, input, optgroup, select, textarea {
   font-family: inherit;
   font-feature-settings: inherit;
   font-variation-settings: inherit;
@@ -233,14 +217,10 @@ textarea {
   margin: 0;
   padding: 0;
 }
-button,
-select {
+button, select {
   text-transform: none;
 }
-button,
-input:where([type="button"]),
-input:where([type="reset"]),
-input:where([type="submit"]) {
+button, input:where([type="button"]), input:where([type="reset"]), input:where([type="submit"]) {
   -webkit-appearance: button;
   appearance: none;
   background-color: transparent;
@@ -255,8 +235,7 @@ input:where([type="submit"]) {
 progress {
   vertical-align: baseline;
 }
-::-webkit-inner-spin-button,
-::-webkit-outer-spin-button {
+::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
   height: auto;
 }
 [type="search"] {
@@ -274,7 +253,7 @@ progress {
 summary {
   display: list-item;
 }
-blockquote,dl,dd,h1,h2,h3,h4,h5,h6,hr,figure,p,pre {
+blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
   margin: 0;
 }
 fieldset {
@@ -284,7 +263,7 @@ fieldset {
 legend {
   padding: 0;
 }
-ol,ul,menu {
+ol, ul, menu {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -295,36 +274,25 @@ dialog {
 textarea {
   resize: vertical;
 }
-input::-moz-placeholder,
-textarea::-moz-placeholder {
+input::-moz-placeholder, textarea::-moz-placeholder {
   opacity: 1;
   color: #9ca3af;
 }
-input::placeholder,
-textarea::placeholder {
+input::placeholder, textarea::placeholder {
   opacity: 1;
   color: #9ca3af;
 }
-button,
-[role="button"] {
+button, [role="button"] {
   cursor: pointer;
 }
 :disabled {
   cursor: default;
 }
-img,
-svg,
-video,
-canvas,
-audio,
-iframe,
-embed,
-object {
+img, svg, video, canvas, audio, iframe, embed, object {
   display: flex;
   align-items: center;
 }
-img,
-video {
+img, video {
   max-width: 100%;
   height: auto;
 }
@@ -366,21 +334,7 @@ body {
     Tahoma,
     sans-serif;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.first-heading,
-.stats-section,
-.copy-right,
-h1 *,
-h2 *,
-h3 *,
-h4 *,
-h5 *,
-h6 * {
+h1, h2, h3, h4, h5, h6, .first-heading, .stats-section, .copy-right, h1 *, h2 *, h3 *, h4 *, h5 *, h6 * {
   font-family: Lalezar, Tahoma, sans-serif !important;
 }
 html {
@@ -669,8 +623,7 @@ body {
     scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 @keyframes bounce {
-  0%,
-  to {
+  0%, to {
     transform: translateY(-25%);
     animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
   }
@@ -1266,24 +1219,41 @@ body {
   --tw-ring-offset-color: hsl(var(--background));
 }
 .filter {
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
-    var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate)
-    var(--tw-sepia) var(--tw-drop-shadow);
+  filter: 
+    var(--tw-blur) 
+    var(--tw-brightness) 
+    var(--tw-contrast)
+    var(--tw-grayscale) 
+    var(--tw-hue-rotate) 
+    var(--tw-invert) 
+    var(--tw-saturate)
+    var(--tw-sepia) 
+    var(--tw-drop-shadow);
 }
 .backdrop-blur-md {
   --tw-backdrop-blur: blur(12px);
-  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness)
-    var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale)
-    var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)
-    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate)
+  backdrop-filter: 
+    var(--tw-backdrop-blur) 
+    var(--tw-backdrop-brightness)
+    var(--tw-backdrop-contrast) 
+    var(--tw-backdrop-grayscale)
+    var(--tw-backdrop-hue-rotate) 
+    var(--tw-backdrop-invert)
+    var(--tw-backdrop-opacity) 
+    var(--tw-backdrop-saturate)
     var(--tw-backdrop-sepia);
 }
 .backdrop-blur-sm {
   --tw-backdrop-blur: blur(4px);
-  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness)
-    var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale)
-    var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)
-    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate)
+  backdrop-filter: 
+    var(--tw-backdrop-blur) 
+    var(--tw-backdrop-brightness)
+    var(--tw-backdrop-contrast) 
+    var(--tw-backdrop-grayscale)
+    var(--tw-backdrop-hue-rotate) 
+    var(--tw-backdrop-invert)
+    var(--tw-backdrop-opacity) 
+    var(--tw-backdrop-saturate)
     var(--tw-backdrop-sepia);
 }
 .transition-all {
@@ -1464,12 +1434,17 @@ body {
   outline-offset: 2px;
 }
 .focus-visible\:ring-1:focus-visible {
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0
-    var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0
-    calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  --tw-ring-offset-shadow: 
+    var(--tw-ring-inset) 0 0 0
+    var(--tw-ring-offset-width) 
+    var(--tw-ring-offset-color);
+  --tw-ring-shadow: 
+    var(--tw-ring-inset) 0 0 0
+    calc(1px + var(--tw-ring-offset-width)) 
+    var(--tw-ring-color);
   box-shadow:
-    var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
+    var(--tw-ring-offset-shadow), 
+    var(--tw-ring-shadow),
     var(--tw-shadow, 0 0 #0000);
 }
 .focus-visible\:ring-ring:focus-visible {
@@ -1486,15 +1461,23 @@ body {
 }
 .group:hover .group-hover\:-translate-x-1 {
   --tw-translate-x: -0.25rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
-    rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transform: translate(var(--tw-translate-x),
+    var(--tw-translate-y))
+    rotate(var(--tw-rotate)) 
+    skew(var(--tw-skew-x)) 
+    skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) 
+    scaleY(var(--tw-scale-y));
 }
 .group:hover .group-hover\:translate-x-1 {
   --tw-translate-x: 0.25rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
-    rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transform: translate(var(--tw-translate-x),
+    var(--tw-translate-y))
+    rotate(var(--tw-rotate)) 
+    skew(var(--tw-skew-x)) 
+    skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) 
+    scaleY(var(--tw-scale-y));
 }
 .group:hover .group-hover\:bg-emerald-600 {
   --tw-bg-opacity: 1;
@@ -1515,27 +1498,43 @@ body {
 }
 .data-\[side\=bottom\]\:translate-y-1[data-side="bottom"] {
   --tw-translate-y: 0.25rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
-    rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transform: translate(var(--tw-translate-x),
+    var(--tw-translate-y))
+    rotate(var(--tw-rotate)) 
+    skew(var(--tw-skew-x)) 
+    skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) 
+    scaleY(var(--tw-scale-y));
 }
 .data-\[side\=left\]\:-translate-x-1[data-side="left"] {
   --tw-translate-x: -0.25rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
-    rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transform: translate(var(--tw-translate-x), 
+    var(--tw-translate-y))
+    rotate(var(--tw-rotate)) 
+    skew(var(--tw-skew-x)) 
+    skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) 
+    scaleY(var(--tw-scale-y));
 }
 .data-\[side\=right\]\:translate-x-1[data-side="right"] {
   --tw-translate-x: 0.25rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
-    rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transform: translate(var(--tw-translate-x), 
+    var(--tw-translate-y))
+    rotate(var(--tw-rotate)) 
+    skew(var(--tw-skew-x)) 
+    skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) 
+    scaleY(var(--tw-scale-y));
 }
 .data-\[side\=top\]\:-translate-y-1[data-side="top"] {
   --tw-translate-y: -0.25rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
-    rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transform: translate(var(--tw-translate-x), 
+    var(--tw-translate-y))
+    rotate(var(--tw-rotate)) 
+    skew(var(--tw-skew-x)) 
+    skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) 
+    scaleY(var(--tw-scale-y));
 }
 .data-\[placeholder\]\:text-muted-foreground[data-placeholder] {
   color: hsl(var(--muted-foreground));
@@ -1647,9 +1646,9 @@ body {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
-line-clamp: 3;
-
+  line-clamp: 3;
 }
+
 .\[\&_svg\]\:pointer-events-none svg {
   pointer-events: none;
 }
