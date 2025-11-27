@@ -3,10 +3,10 @@ import React from "react";
 
 export default function Navbar() {
   return (
-    <nav className="fixed top-0 w-full z-50 transition-all duration-300 bg-white/95 backdrop-blur-md shadow-sm">
+    <nav dir="ltr" lang="en" className="fixed top-0 w-full z-50 transition-all duration-300 bg-white/95 backdrop-blur-md shadow-sm">
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-          <a className="flex items-center gap-3 cursor-pointer" href="./">
+          <a className="flex items-center gap-3 cursor-pointer" href="./" aria-label="Home">
             <div className="w-10 h-10 bg-gradient-to-r from-emerald-500 to-emerald-600 rounded-xl flex items-center justify-center shadow-lg">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -28,16 +28,16 @@ export default function Navbar() {
               </svg>
             </div>
             <span className="first-heading text-2xl font-bold bg-gradient-to-r from-emerald-600 to-emerald-700 bg-clip-text text-transparent">
-              باربری نیلگون خلیج فارس
+              Nilgoon Gulf Transport
             </span>
           </a>
 
           <div className="hidden md:flex items-center gap-8">
-            <a href="#about" className="text-gray-700 hover:text-emerald-600 font-medium transition-colors"> درباره ما</a>
-            <a href="#services" className="text-gray-700 hover:text-emerald-600 font-medium transition-colors"> خدمات</a>
-            <a href="#testimonials" className="text-gray-700 hover:text-emerald-600 font-medium transition-colors"> نظرات مشتریان</a>
-            <a href="#contact" className="text-gray-700 hover:text-emerald-600 font-medium transition-colors"> تماس با ما</a>
-            <a className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2 rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl" href="./review">ثبت بازخورد</a>
+            <a href="#about" className="text-gray-700 hover:text-emerald-600 font-medium transition-colors">About</a>
+            <a href="#services" className="text-gray-700 hover:text-emerald-600 font-medium transition-colors">Services</a>
+            <a href="#testimonials" className="text-gray-700 hover:text-emerald-600 font-medium transition-colors">Testimonials</a>
+            <a href="#contact" className="text-gray-700 hover:text-emerald-600 font-medium transition-colors">Contact</a>
+            <a className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2 rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl" href="./review">Submit Feedback</a>
           </div>
 
           <div className="md:hidden flex items-center gap-4">
