@@ -1,4 +1,4 @@
-.leaflet-control-layers-toggle {
+/* .leaflet-control-layers-toggle {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAQAAAADQ4RFAAACf0lEQVR4AY1UM3gkARTePdvdoTxXKc+qTl3aU5U6b2Kbkz3Gtq3Zw6ziLGNPzrYx7946Tr6/ee/XeCQ4D3ykPtL5tHno4n0d/h3+xfuWHGLX81cn7r0iTNzjr7LrlxCqPtkbTQEHeqOrTy4Yyt3VCi/IOB0v7rVC7q45Q3Gr5K6jt+3Gl5nCoDD4MtO+j96Wu8atmhGqcNGHObuf8OM/x3AMx38+4Z2sPqzCxRFK2aF2e5Jol56XTLyggAMTL56XOMoS1W4pOyjUcGGQdZxU6qRh7B9Zp+PfpOFlqt0zyDZckPi1ttmIp03jX8gyJ8a/PG2yutpS/Vol7peZIbZcKBAEEheEIAgFbDkz5H6Zrkm2hVWGiXKiF4Ycw0RWKdtC16Q7qe3X4iOMxruonzegJzWaXFrU9utOSsLUmrc0YjeWYjCW4PDMADElpJSSQ0vQvA1Tm6/JlKnqFs1EGyZiFCqnRZTEJJJiKRYzVYzJck2Rm6P4iH+cmSY0YzimYa8l0EtTODFWhcMIMVqdsI2uiTvKmTisIDHJ3od5GILVhBCarCfVRmo4uTjkhrhzkiBV7SsaqS+TzrzM1qpGGUFt28pIySQHR6h7F6KSwGWm97ay+Z+ZqMcEjEWebE7wxCSQwpkhJqoZA5ivCdZDjJepuJ9IQjGGUmuXJdBFUygxVqVsxFsLMbDe8ZbDYVCGKxs+W080max1hFCarCfV+C1KATwcnvE9gRRuMP2prdbWGowm1KB1y+zwMMENkM755cJ2yPDtqhTI6ED1M/82yIDtC/4j4BijjeObflpO9I9MwXTCsSX8jWAFeHr05WoLTJ5G8IQVS/7vwR6ohirYM7f6HzYpogfS3R2OAAAAAElFTkSuQmCC);
   width: 36px;
   height: 36px;
@@ -10,10 +10,7 @@
 .leaflet-default-icon-path {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAApCAYAAADAk4LOAAAFgUlEQVR4Aa1XA5BjWRTN2oW17d3YaZtr2962HUzbDNpjszW24mRt28p47v7zq/bXZtrp/lWnXr337j3nPCe85NcypgSFdugCpW5YoDAMRaIMqRi6aKq5E3YqDQO3qAwjVWrD8Ncq/RBpykd8oZUb/kaJutow8r1aP9II0WmLKLIsJyv1w/kqw9Ch2MYdB++12Onxee/QMwvf4/Dk/Lfp/i4nxTXtOoQ4pW5Aj7wpici1A9erdAN2OH64x8OSP9j3Ft3b7aWkTg/Fm91siTra0f9on5sQr9INejH6CUUUpavjFNq1B+Oadhxmnfa8RfEmN8VNAsQhPqF55xHkMzz3jSmChWU6f7/XZKNH+9+hBLOHYozuKQPxyMPUKkrX/K0uWnfFaJGS1QPRtZsOPtr3NsW0uyh6NNCOkU3Yz+bXbT3I8G3xE5EXLXtCXbbqwCO9zPQYPRTZ5vIDXD7U+w7rFDEoUUf7ibHIR4y6bLVPXrz8JVZEql13trxwue/uDivd3fkWRbS6/IA2bID4uk0UpF1N8qLlbBlXs4Ee7HLTfV1j54APvODnSfOWBqtKVvjgLKzF5YdEk5ewRkGlK0i33Eofffc7HT56jD7/6U+qH3Cx7SBLNntH5YIPvODnyfIXZYRVDPqgHtLs5ABHD3YzLuespb7t79FY34DjMwrVrcTuwlT55YMPvOBnRrJ4VXTdNnYug5ucHLBjEpt30701A3Ts+HEa73u6dT3FNWwflY86eMHPk+Yu+i6pzUpRrW7SNDg5JHR4KapmM5Wv2E8Tfcb1HoqqHMHU+uWDD7zg54mz5/2BSnizi9T1Dg4QQXLToGNCkb6tb1NU+QAlGr1++eADrzhn/u8Q2YZhQVlZ5+CAOtqfbhmaUCS1ezNFVm2imDbPmPng5wmz+gwh+oHDce0eUtQ6OGDIyR0uUhUsoO3vfDmmgOezH0mZN59x7MBi++WDL1g/eEiU3avlidO671bkLfwbw5XV2P8Pzo0ydy4t2/0eu33xYSOMOD8hTf4CrBtGMSoXfPLchX+J0ruSePw3LZeK0juPJbYzrhkH0io7B3k164hiGvawhOKMLkrQLyVpZg8rHFW7E2uHOL888IBPlNZ1FPzstSJM694fWr6RwpvcJK60+0HCILTBzZLFNdtAzJaohze60T8qBzyh5ZuOg5e7uwQppofEmf2++DYvmySqGBuKaicF1blQjhuHdvCIMvp8whTTfZzI7RldpwtSzL+F1+wkdZ2TBOW2gIF88PBTzD/gpeREAMEbxnJcaJHNHrpzji0gQCS6hdkEeYt9DF/2qPcEC8RM28Hwmr3sdNyht00byAut2k3gufWNtgtOEOFGUwcXWNDbdNbpgBGxEvKkOQsxivJx33iow0Vw5S6SVTrpVq11ysA2Rp7gTfPfktc6zhtXBBC+adRLshf6sG2RfHPZ5EAc4sVZ83yCN00Fk/4kggu40ZTvIEm5g24qtU4KjBrx/BTTH8ifVASAG7gKrnWxJDcU7x8X6Ecczhm3o6YicvsLXWfh3Ch1W0k8x0nXF+0fFxgt4phz8QvypiwCCFKMqXCnqXExjq10beH+UUA7+nG6mdG/Pu0f3LgFcGrl2s0kNNjpmoJ9o4B29CMO8dMT4Q5ox8uitF6fqsrJOr8qnwNbRzv6hSnG5wP+64C7h9lp30hKNtKdWjtdkbuPA19nJ7Tz3zR/ibgARbhb4AlhavcBebmTHcFl2fvYEnW0ox9xMxKBS8btJ+KiEbq9zA4RthQXDhPa0T9TEe69gWupwc6uBUphquXgf+/FrIjweHQS4/pduMe5ERUMHUd9xv8ZR98CxkS4F2n3EUrUZ10EYNw7BWm9x1GiPssi3GgiGRDKWRYZfXlON+dfNbM+GgIwYdwAAAAASUVORK5CYII=);
 }
-.leaflet-pane, .leaflet-tile, .leaflet-marker-icon, .leaflet-marker-shadow, .leaflet-tile-container,
-.leaflet-pane > svg,
-.leaflet-pane > canvas,
-.leaflet-zoom-box, .leaflet-image-layer, .leaflet-layer {
+.leaflet-pane, .leaflet-tile, .leaflet-marker-icon, .leaflet-marker-shadow, .leaflet-tile-container, .leaflet-pane > svg, .leaflet-pane > canvas, .leaflet-zoom-box, .leaflet-image-layer, .leaflet-layer {
   position: absolute;
   left: 0;
   top: 0;
@@ -21,9 +18,7 @@
 .leaflet-container {
   overflow: hidden;
 }
-.leaflet-tile,
-.leaflet-marker-icon,
-.leaflet-marker-shadow {
+.leaflet-tile, .leaflet-marker-icon, .leaflet-marker-shadow {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
@@ -44,19 +39,14 @@
   -webkit-transform-origin: center;
   transform-origin: center;
 }
-.leaflet-marker-icon,
-.leaflet-marker-shadow {
+.leaflet-marker-icon, .leaflet-marker-shadow {
   display: block;
 }
 .leaflet-container .leaflet-overlay-pane svg {
   max-width: none !important;
   max-height: none !important;
 }
-.leaflet-container .leaflet-marker-pane img,
-.leaflet-container .leaflet-shadow-pane img,
-.leaflet-container .leaflet-tile-pane img,
-.leaflet-container img.leaflet-image-layer,
-.leaflet-container .leaflet-tile {
+.leaflet-container .leaflet-marker-pane img, .leaflet-container .leaflet-shadow-pane img, .leaflet-container .leaflet-tile-pane img, .leaflet-container img.leaflet-image-layer, .leaflet-container .leaflet-tile {
   max-width: none !important;
   max-height: none !important;
   width: auto;
@@ -187,8 +177,7 @@ svg.leaflet-zoom-animated {
 .leaflet-zoom-anim .leaflet-zoom-animated {
   transition: transform 0.25s cubic-bezier(0, 0, 0.25, 1);
 }
-.leaflet-zoom-anim .leaflet-tile,
-.leaflet-pan-anim .leaflet-tile {
+.leaflet-zoom-anim .leaflet-tile, .leaflet-pan-anim .leaflet-tile {
   transition: none;
 }
 .leaflet-zoom-anim .leaflet-zoom-hide {
@@ -206,21 +195,14 @@ svg.leaflet-zoom-animated {
 .leaflet-popup-pane, .leaflet-control {
   cursor: auto;
 }
-.leaflet-dragging .leaflet-grab,
-.leaflet-dragging .leaflet-grab .leaflet-interactive,
-.leaflet-dragging .leaflet-marker-draggable {
+.leaflet-dragging .leaflet-grab, .leaflet-dragging .leaflet-grab .leaflet-interactive, .leaflet-dragging .leaflet-marker-draggable {
   cursor: move;
   cursor: grabbing;
 }
-.leaflet-marker-icon, .leaflet-marker-shadow, .leaflet-image-layer,
-.leaflet-pane > svg path,
-.leaflet-tile-container {
+.leaflet-marker-icon, .leaflet-marker-shadow, .leaflet-image-layer, .leaflet-pane > svg path, .leaflet-tile-container {
   pointer-events: none;
 }
-.leaflet-marker-icon.leaflet-interactive,
-.leaflet-image-layer.leaflet-interactive,
-.leaflet-pane > svg path.leaflet-interactive,
-svg.leaflet-image-layer.leaflet-interactive path {
+.leaflet-marker-icon.leaflet-interactive, .leaflet-image-layer.leaflet-interactive, .leaflet-pane > svg path.leaflet-interactive, svg.leaflet-image-layer.leaflet-interactive path {
   pointer-events: visiblePainted;
   pointer-events: auto;
 }
@@ -260,14 +242,12 @@ svg.leaflet-image-layer.leaflet-interactive path {
   text-decoration: none;
   color: #000;
 }
-.leaflet-bar a,
-.leaflet-control-layers-toggle {
+.leaflet-bar a, .leaflet-control-layers-toggle {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   display: block;
 }
-.leaflet-bar a:hover,
-.leaflet-bar a:focus {
+.leaflet-bar a:hover, .leaflet-bar a:focus {
   background-color: #f4f4f4;
 }
 .leaflet-bar a:first-child {
@@ -297,16 +277,14 @@ svg.leaflet-image-layer.leaflet-interactive path {
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
 }
-.leaflet-control-zoom-in,
-.leaflet-control-zoom-out {
+.leaflet-control-zoom-in, .leaflet-control-zoom-out {
   font:
     700 18px Lucida Console,
     Monaco,
     monospace;
   text-indent: 1px;
 }
-.leaflet-touch .leaflet-control-zoom-in,
-.leaflet-touch .leaflet-control-zoom-out {
+.leaflet-touch .leaflet-control-zoom-in, .leaflet-touch .leaflet-control-zoom-out {
   font-size: 22px;
 }
 .leaflet-control-layers {
@@ -327,8 +305,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   width: 44px;
   height: 44px;
 }
-.leaflet-control-layers .leaflet-control-layers-list,
-.leaflet-control-layers-expanded .leaflet-control-layers-toggle {
+.leaflet-control-layers .leaflet-control-layers-list, .leaflet-control-layers-expanded .leaflet-control-layers-toggle {
   display: none;
 }
 .leaflet-control-layers-expanded .leaflet-control-layers-list {
@@ -368,8 +345,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   background: rgba(255, 255, 255, 0.8);
   margin: 0;
 }
-.leaflet-control-attribution,
-.leaflet-control-scale-line {
+.leaflet-control-attribution, .leaflet-control-scale-line {
   padding: 0 5px;
   color: #333;
   line-height: 1.4;
@@ -377,8 +353,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 .leaflet-control-attribution a {
   text-decoration: none;
 }
-.leaflet-control-attribution a:hover,
-.leaflet-control-attribution a:focus {
+.leaflet-control-attribution a:hover, .leaflet-control-attribution a:focus {
   text-decoration: underline;
 }
 .leaflet-attribution-flag {
@@ -411,13 +386,10 @@ svg.leaflet-image-layer.leaflet-interactive path {
 .leaflet-control-scale-line:not(:first-child):not(:last-child) {
   border-bottom: 2px solid #777;
 }
-.leaflet-touch .leaflet-control-attribution,
-.leaflet-touch .leaflet-control-layers,
-.leaflet-touch .leaflet-bar {
+.leaflet-touch .leaflet-control-attribution, .leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar {
   box-shadow: none;
 }
-.leaflet-touch .leaflet-control-layers,
-.leaflet-touch .leaflet-bar {
+.leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar {
   border: 2px solid rgba(0, 0, 0, 0.2);
   background-clip: padding-box;
 }
@@ -459,8 +431,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   pointer-events: auto;
   transform: rotate(45deg);
 }
-.leaflet-popup-content-wrapper,
-.leaflet-popup-tip {
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
   background: #fff;
   color: #333;
   box-shadow: 0 3px 14px rgba(0, 0, 0, 0.4);
@@ -481,8 +452,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   text-decoration: none;
   background: transparent;
 }
-.leaflet-container a.leaflet-popup-close-button:hover,
-.leaflet-container a.leaflet-popup-close-button:focus {
+.leaflet-container a.leaflet-popup-close-button:hover, .leaflet-container a.leaflet-popup-close-button:focus {
   color: #585858;
 }
 .leaflet-popup-scrolled {
@@ -490,7 +460,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 .leaflet-oldie .leaflet-popup-content-wrapper {
   -ms-zoom: 1;
-  zoom: 1; /* fallback */
+  zoom: 1;
 }
 .leaflet-oldie .leaflet-popup-tip {
   width: 24px;
@@ -498,10 +468,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678)";
   filter: progid:DXImageTransform.Microsoft.Matrix(M11=.70710678,M12=.70710678,M21=-.70710678,M22=.70710678);
 }
-.leaflet-oldie .leaflet-control-zoom,
-.leaflet-oldie .leaflet-control-layers,
-.leaflet-oldie .leaflet-popup-content-wrapper,
-.leaflet-oldie .leaflet-popup-tip {
+.leaflet-oldie .leaflet-control-zoom, .leaflet-oldie .leaflet-control-layers, .leaflet-oldie .leaflet-popup-content-wrapper, .leaflet-oldie .leaflet-popup-tip {
   border: 1px solid #999;
 }
 .leaflet-div-icon {
@@ -526,10 +493,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   cursor: pointer;
   pointer-events: auto;
 }
-.leaflet-tooltip-top:before,
-.leaflet-tooltip-bottom:before,
-.leaflet-tooltip-left:before,
-.leaflet-tooltip-right:before {
+.leaflet-tooltip-top:before, .leaflet-tooltip-bottom:before, .leaflet-tooltip-left:before, .leaflet-tooltip-right:before {
   position: absolute;
   pointer-events: none;
   border: 6px solid transparent;
@@ -542,8 +506,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 .leaflet-tooltip-top {
   margin-top: -6px;
 }
-.leaflet-tooltip-bottom:before,
-.leaflet-tooltip-top:before {
+.leaflet-tooltip-bottom:before, .leaflet-tooltip-top:before {
   left: 50%;
   margin-left: -6px;
 }
@@ -564,8 +527,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 .leaflet-tooltip-right {
   margin-left: 6px;
 }
-.leaflet-tooltip-left:before,
-.leaflet-tooltip-right:before {
+.leaflet-tooltip-left:before, .leaflet-tooltip-right:before {
   top: 50%;
   margin-top: -6px;
 }
@@ -584,4 +546,4 @@ svg.leaflet-image-layer.leaflet-interactive path {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
-}
+} */

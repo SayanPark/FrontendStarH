@@ -28,8 +28,8 @@ export default function Relative() {
                 <span className="block text-white text-4xl md:text-5xl mt-2">(مؤسسه اصفهان سابق)</span>
               </h1>
               <p className="text-xl text-emerald-100 leading-relaxed mb-8 max-w-2xl">
-                نیلگون لجستیک، با سابقه‌ای بیش از ۶۰ سال در خدمات
-                <strong>باربری کرمانشاه</strong>
+                نیلگون لجستیک، با سابقه‌ای بیش از ۶۰ سال در خدمات 
+                <strong> باربری کرمانشاه </strong> 
                 ، حمل‌ونقل بین‌شهری و درون‌شهری را با ناوگان مجهز، بیمه
                 معتبر و پشتیبانی ۲۴ ساعته ارائه می‌دهد.
               </p>

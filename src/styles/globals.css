@@ -1648,7 +1648,6 @@ body {
   -webkit-line-clamp: 3;
   line-clamp: 3;
 }
-
 .\[\&_svg\]\:pointer-events-none svg {
   pointer-events: none;
 }

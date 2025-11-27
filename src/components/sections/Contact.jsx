@@ -35,7 +35,10 @@ export default function Contact() {
                     </div>
                     <h4 className="font-semibold text-gray-900 mb-2">تماس با ما - موبایل</h4>
                     <div className="space-y-1 mb-2">
-                      <a href="tel:09181316405" className="block text-gray-600 text-sm hover:text-emerald-600 transition-colors" dir="ltr">+989181316405</a><a href="tel:09183341953" className="block text-gray-600 text-sm hover:text-emerald-600 transition-colors" dir="ltr">+989183341953</a><a href="tel:09181300370" className="block text-gray-600 text-sm hover:text-emerald-600 transition-colors" dir="ltr">+989181300370</a><a href="tel:09181300369" className="block text-gray-600 text-sm hover:text-emerald-600 transition-colors" dir="ltr">+989181300369</a>
+                      <a href="tel:09181316405" className="block text-gray-600 text-sm hover:text-emerald-600 transition-colors" dir="ltr">+989181316405</a>
+                      <a href="tel:09183341953" className="block text-gray-600 text-sm hover:text-emerald-600 transition-colors" dir="ltr">+989183341953</a>
+                      <a href="tel:09181300370" className="block text-gray-600 text-sm hover:text-emerald-600 transition-colors" dir="ltr">+989181300370</a>
+                      <a href="tel:09181300369" className="block text-gray-600 text-sm hover:text-emerald-600 transition-colors" dir="ltr">+989181300369</a>
                     </div>
                     <p className="text-xs text-emerald-600 font-medium">پشتیبانی ۲۴ ساعته</p>
                   </div>
@@ -87,7 +90,7 @@ export default function Contact() {
                 </div>
               </div>
             </div>
-            <div className="relative h-96 rounded-2xl overflow-hidden">
+            {/* <div className="relative h-96 rounded-2xl overflow-hidden">
               <div className="h-full w-full rounded-2xl overflow-hidden">
                 <div className="rounded-2xl leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" tabIndex={0} style={{height: '100%', width: '100%', position: 'relative'}}>
                   <div className="leaflet-pane leaflet-map-pane" style={{transform: 'translate3d(0, 0, 0)'}}>
@@ -135,7 +138,7 @@ export default function Contact() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="transition-all duration-1000 opacity-100 translate-y-10">
             <div className="rounded-xl bg-card text-card-foreground border-0 shadow-xl">
