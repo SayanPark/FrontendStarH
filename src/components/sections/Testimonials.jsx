@@ -1,9 +1,8 @@
-import React, { useEffect } from "react";
+import React, { forwardRef } from "react";
 
-export default function Testimonials() {
-
+const Testimonials = forwardRef((props, ref) => {
   return (
-    <section id="testimonials" className="py-24 bg-gradient-to-b from-emerald-50 to-white">
+    <section id="testimonials" ref={ref} className="py-24 bg-gradient-to-b from-emerald-50 to-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="transition-all duration-1000 opacity-100 translate-y-10">
           <div className="text-center mb-16">
@@ -87,7 +86,7 @@ export default function Testimonials() {
                   </svg>
                   <p className="text-gray-600 leading-relaxed pr-6">
                     «حمل بار صنعتی من بدون هیچ مشکلی انجام شد. خدمات
-                    عالی و پشتیبانیায়. قیمت‌ها هم بسیار منصفانه است.»
+                    عالی و پشتیبانی بی‌نظیر. قیمت‌ها هم بسیار منصفانه است.»
                   </p>
                 </div>
                 <div className="border-t border-gray-100 pt-6">
@@ -167,5 +166,7 @@ export default function Testimonials() {
         </div>
       </div>
     </section>
-  )
-}
+  );
+});
+
+export default Testimonials;

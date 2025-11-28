@@ -1,9 +1,8 @@
-import React, { useEffect } from "react";
+import React, { forwardRef } from "react";
 
-export default function Contact() {
-
+const Contact = forwardRef((props, ref) => {
   return (
-    <section id="contact" className="py-24 bg-gray-50">
+    <section id="contact" ref={ref} className="py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
         <div className="transition-all duration-1000 opacity-100 translate-y-10">
           <div className="text-center mb-16">
@@ -184,4 +183,6 @@ export default function Contact() {
       </div>
     </section>        
   );
-}
+});
+
+export default Contact;

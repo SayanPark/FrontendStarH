@@ -1,15 +1,24 @@
 import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import heroLarge from '../../assets/images/hero-large.webp';
+import heroMedium from '../../assets/images/hero-medium.webp';
+import heroSmall from '../../assets/images/hero-small.webp';
 
-export default function Relative() {
+export default function Relative({ onNavigate }) {
+    const navigate = useNavigate();
+
+  const goContact = () => {
+    navigate(`/?scroll=contact`);
+  };
 
   return (
     <section className="relative min-h-[120vh] md:h-screen overflow-hidden items-center">
       <div className="absolute inset-0 overflow-hidden">
         <picture className="absolute inset-0">
-          <source media="(max-width: 480px)" srcSet="./assets/images/hero-small.webp" type="image/webp" />
-          <source media="(max-width: 768px)" srcSet="./assets/images/hero-medium.webp" type="image/webp" />
-          <source srcSet="./assets/images/hero-large.webp" type="image/webp" />
-          <img src="./assets/images/hero-medium.webp" alt="کامیون حمل بار نیلگون خلیج فارس در پایانه کرمانشاه - خدمات باربری و لجستیک در سراسر ایران" className="w-full h-full object-cover" style={{transform: 'translateY(0)'}} />
+          <source media="(max-width: 480px)" srcSet={heroSmall} type="image/webp" />
+          <source media="(max-width: 768px)" srcSet={heroMedium} type="image/webp" />
+          <source srcSet={heroLarge} type="image/webp" />
+          <img src={heroMedium} alt="کامیون حمل بار نیلگون خلیج فارس در پایانه کرمانشاه - خدمات باربری و لجستیک در سراسر ایران" className="w-full h-full object-cover" style={{transform: 'translateY(0)'}} />
         </picture>
         <div className="absolute inset-0 bg-gradient-to-r from-emerald-900/80 via-emerald-800/70 to-emerald-700/60" />
       </div>
@@ -34,13 +43,13 @@ export default function Relative() {
                 معتبر و پشتیبانی ۲۴ ساعته ارائه می‌دهد.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
-                <a href="#contact" className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 h-9 bg-emerald-600 hover:bg-emerald-700 px-8 py-4 text-xlg rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 group">
+                <button onClick={goContact} className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium h-9 bg-emerald-600 hover:bg-emerald-700 px-8 py-4 text-xlg rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 group">
                   همین حالا حمل بار خود را شروع کنید
                   <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-left w-5 h-5 mr-2 group-hover:-translate-x-1 transition-transform">
                     <path d="m12 19-7-7 7-7" />
                     <path d="M19 12H5" />
                   </svg>
-                </a>
+                </button>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-sm">
                 <div className="flex items-center gap-3">

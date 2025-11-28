@@ -1,9 +1,11 @@
-import React, { useEffect } from "react";
+import React, { forwardRef } from "react";
+import truckLarge from '../../assets/images/truck-large.webp';
+import truckMedium from '../../assets/images/truck-medium.webp';
+import truckSmall from '../../assets/images/truck-small.webp';
 
-export default function About() {
-
+const About = forwardRef((props, ref) => {
   return (
-    <section id="about" className="py-24 bg-gradient-to-b from-gray-50 to-white">
+    <section id="about" ref={ref} className="py-24 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="transition-all duration-1000">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -69,10 +71,10 @@ export default function About() {
             </div>
             <div className="relative z-10">
               <picture>
-                <source media="(max-width: 640px)" srcSet="./assets/images/truck-small.webp" type="image/webp" />
-                <source media="(max-width: 1024px)" srcSet="./assets/images/truck-medium.webp" type="image/webp" />
-                <source srcSet="./assets/images/truck-large.webp" type="image/webp" />
-                <img src="./assets/images/truck-medium.webp" alt="کامیون حمل بار نیلگون خلیج فارس در پایانه کرمانشاه - خدمات حمل بار تجاری و صنعتی" className="w-full h-full object-cover" />
+                <source media="(max-width: 640px)" srcSet={truckSmall} type="image/webp" />
+                <source media="(max-width: 1024px)" srcSet={truckMedium} type="image/webp" />
+                <source srcSet={truckLarge} type="image/webp" />
+                <img src={truckMedium} alt="کامیون حمل بار نیلگون خلیج فارس در پایانه کرمانشاه - خدمات حمل بار تجاری و صنعتی" className="w-full h-full object-cover" />
               </picture>
             </div>
           </div>
@@ -131,4 +133,6 @@ export default function About() {
       </div>
     </section>
   );
-}
+});
+
+export default About;

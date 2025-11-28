@@ -1,4 +1,3 @@
-// src/components/elements/Scripts.jsx
 import React, { useEffect } from "react";
 
 export default function Scripts() {

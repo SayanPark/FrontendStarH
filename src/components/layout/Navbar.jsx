@@ -1,11 +1,19 @@
 import React from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 export default function Navbar() {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleNav = (section) => {
+    navigate(`/?scroll=${section}`);
+  };
+
   return (
     <nav dir="ltr" lang="en" className="fixed top-0 w-full z-50 transition-all duration-300 bg-white/95 backdrop-blur-md shadow-sm">
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-          <a className="flex items-center gap-3 cursor-pointer" href="./" aria-label="Home">
+          <a className="flex items-center gap-3 cursor-pointer" href="/" aria-label="Home">
             <div className="w-10 h-10 bg-gradient-to-r from-emerald-500 to-emerald-600 rounded-xl flex items-center justify-center shadow-lg">
               <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-truck w-6 h-6 text-white">
                 <path d="M5 18H3c-.6 0-1-.4-1-1V7c0-.6.4-1 1-1h10c.6 0 1 .4 1 1v11" />
@@ -21,11 +29,11 @@ export default function Navbar() {
           </a>
 
           <div className="hidden md:flex items-center gap-8">
-            <a href="#about" className="text-gray-700 hover:text-emerald-600 font-medium transition-colors">About</a>
-            <a href="#services" className="text-gray-700 hover:text-emerald-600 font-medium transition-colors">Services</a>
-            <a href="#testimonials" className="text-gray-700 hover:text-emerald-600 font-medium transition-colors">Testimonials</a>
-            <a href="#contact" className="text-gray-700 hover:text-emerald-600 font-medium transition-colors">Contact</a>
-            <a className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2 rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl" href="./review">Submit Feedback</a>
+            <button onClick={() => handleNav("about")} className="text-gray-700 hover:text-emerald-600 font-medium transition-colors">About</button>
+            <button onClick={() => handleNav("services")} className="text-gray-700 hover:text-emerald-600 font-medium transition-colors">Services</button>
+            <button onClick={() => handleNav("testimonials")} className="text-gray-700 hover:text-emerald-600 font-medium transition-colors">Testimonials</button>
+            <button onClick={() => handleNav("contact")} className="text-gray-700 hover:text-emerald-600 font-medium transition-colors">Contact</button>
+            <a className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2 rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl" href="/review">Submit Feedback</a>
           </div>
 
           <div className="md:hidden flex items-center gap-4">

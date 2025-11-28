@@ -1,9 +1,8 @@
-import React, { useEffect } from "react";
+import React, { forwardRef } from "react";
 
-export default function Services() {
-
+const Services = forwardRef((props, ref) => {
   return (
-    <section id="services" className="py-24 bg-white">
+    <section id="services" ref={ref} className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6 text-xl">
         <div className="transition-all duration-1000 opacity-100 translate-y-10">
           <div className="text-center mb-16">
@@ -227,4 +226,6 @@ export default function Services() {
       </div>
     </section>
   );
-}
+});
+
+export default Services;
