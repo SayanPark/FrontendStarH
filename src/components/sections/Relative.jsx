@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import heroLarge from '../../assets/images/hero-large.webp';
-import heroMedium from '../../assets/images/hero-medium.webp';
-import heroSmall from '../../assets/images/hero-small.webp';
 
 export default function Relative() {
   const navigate = useNavigate();
