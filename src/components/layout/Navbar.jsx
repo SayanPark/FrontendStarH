@@ -1,5 +1,5 @@
 import React from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate, Link } from "react-router-dom";
 
 export default function Navbar() {
   const location = useLocation();
@@ -33,7 +33,9 @@ export default function Navbar() {
             <button onClick={() => handleNav("services")} className="text-gray-700 hover:text-emerald-600 font-medium transition-colors">Services</button>
             <button onClick={() => handleNav("testimonials")} className="text-gray-700 hover:text-emerald-600 font-medium transition-colors">Testimonials</button>
             <button onClick={() => handleNav("contact")} className="text-gray-700 hover:text-emerald-600 font-medium transition-colors">Contact</button>
-            <a className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2 rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl" href="/review">Submit Feedback</a>
+            <Link to="/review">            
+              <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2 rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl" href="/review">Submit Feedback</button>
+            </Link>
           </div>
 
           <div className="md:hidden flex items-center gap-4">
