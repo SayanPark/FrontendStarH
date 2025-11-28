@@ -106,6 +106,6 @@ export default function Relative() {
           <div className="w-1 h-3 bg-white rounded-full mt-2 animate-pulse" />
         </div>
       </div>
-    </section>  
+    </section>
   );
 }
