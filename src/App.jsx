@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-    <HashRouter basename="/nilgoon-react">
+    <HashRouter>
       <Head />
       <Navbar />
       
