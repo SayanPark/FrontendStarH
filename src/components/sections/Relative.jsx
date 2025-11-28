@@ -18,17 +18,20 @@ export default function Relative() {
   }, []);
 
   return (
-    <section className="relative min-h-[120vh] md:h-screen overflow-hidden items-center">
-      <div className="absolute inset-0 overflow-hidden">
-        <picture className="absolute inset-0">
-          <source media="(max-width: 480px)" srcSet={heroSmall} type="image/webp" />
-          <source media="(max-width: 768px)" srcSet={heroMedium} type="image/webp" />
-          <source srcSet={heroLarge} type="image/webp" />
-          <img src={heroMedium} alt="کامیون حمل بار نیلگون خلیج فارس در پایانه کرمانشاه - خدمات باربری و لجستیک در سراسر ایران" className="w-full h-full object-cover" style={{transform: 'translateY(0)'}} />
-        </picture>
-        <div className="absolute inset-0 bg-gradient-to-r from-emerald-900/80 via-emerald-800/70 to-emerald-700/60" />
-      </div>
-      <div className="relative z-10 h-full flex items-center">
+    <section
+      className="relative min-h-[120vh] md:h-screen overflow-hidden flex items-center bg-cover bg-center bg-no-repeat"
+      style={{
+        backgroundImage: `url(${heroLarge})`,
+        backgroundAttachment: "fixed", // بک‌گراند ثابت
+        backgroundPosition: "center -5.5%",
+        backgroundSize: "cover",
+      }}
+    >
+      {/* گرادیان روی بک‌گراند */}
+      <div className="absolute inset-0 bg-gradient-to-r from-emerald-900/80 via-emerald-800/70 to-emerald-700/60"></div>
+
+      {/* محتوا */}
+      <div className="relative z-10 max-w-7xl mx-auto px-6 text-white">
         <div className="max-w-7xl mx-auto px-6 text-white">
           <div className={`transition-all duration-1000 ${ fadeUp ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"  }`}>
             <div className="max-w-3xl">
@@ -38,7 +41,7 @@ export default function Relative() {
                 </div>
               </div>
               <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
-                باربری در کرمانشاه با
+                پایانه بار کرمانشاه
                 <span className="block text-emerald-300">نیلگون خلیج‌فارس</span>
                 <span className="block text-white text-4xl md:text-5xl mt-2">(مؤسسه اصفهان سابق)</span>
               </h1>
