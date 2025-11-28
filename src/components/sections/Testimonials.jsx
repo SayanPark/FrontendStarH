@@ -1,10 +1,35 @@
-import React, { forwardRef } from "react";
+import React, { forwardRef, useEffect, useState, useRef } from "react";
 
 const Testimonials = forwardRef((props, ref) => {
+  const [fadeUp, setFadeUp] = useState(false);
+  const sectionRef = ref || useRef(null);
+
+  useEffect(() => {
+    if (!sectionRef.current) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setFadeUp(true);
+            observer.unobserve(entry.target); // فقط یکبار فعال شود
+          }
+        });
+      },
+      { threshold: 0.2 } // وقتی 20٪ سکشن در viewport باشد
+    );
+
+    observer.observe(sectionRef.current);
+
+    return () => {
+      if (sectionRef.current) observer.unobserve(sectionRef.current);
+    };
+  }, [sectionRef]);
+
   return (
     <section id="testimonials" ref={ref} className="py-24 bg-gradient-to-b from-emerald-50 to-white">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="transition-all duration-1000 opacity-100 translate-y-10">
+        <div className={`transition-all duration-1000 ${ fadeUp ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"  }`}>
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-100 text-emerald-700 rounded-full mb-6">
               <span className="text-sm font-medium">نظرات مشتریان</span>
@@ -21,7 +46,7 @@ const Testimonials = forwardRef((props, ref) => {
           </div>
         </div>
         <div className="grid md:grid-cols-3 gap-8 text-xl">
-          <div className="transition-all duration-1000 opacity-100 translate-y-10">
+          <div className={`transition-all duration-1000 ${ fadeUp ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"  }`}>
             <div className="rounded-xl text-card-foreground group hover:shadow-xl transition-all duration-300 border-0 shadow-lg hover:-translate-y-2 bg-white h-full">
               <div className="p-8">
                 <div className="flex items-center gap-1 mb-6">
@@ -59,7 +84,7 @@ const Testimonials = forwardRef((props, ref) => {
               </div>
             </div>
           </div>
-          <div className="transition-all duration-1000 opacity-100 translate-y-10">
+          <div className={`transition-all duration-1000 ${ fadeUp ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"  }`}>
             <div className="rounded-xl text-card-foreground group hover:shadow-xl transition-all duration-300 border-0 shadow-lg hover:-translate-y-2 bg-white h-full">
               <div className="p-8">
                 <div className="flex items-center gap-1 mb-6">
@@ -97,7 +122,7 @@ const Testimonials = forwardRef((props, ref) => {
               </div>
             </div>
           </div>
-          <div className="transition-all duration-1000 opacity-100 translate-y-10">
+          <div className={`transition-all duration-1000 ${ fadeUp ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"  }`}>
             <div className="rounded-xl text-card-foreground group hover:shadow-xl transition-all duration-300 border-0 shadow-lg hover:-translate-y-2 bg-white h-full">
               <div className="p-8">
                 <div className="flex items-center gap-1 mb-6">
@@ -137,7 +162,7 @@ const Testimonials = forwardRef((props, ref) => {
             </div>
           </div>
         </div>
-        <div className="transition-all duration-1000 opacity-100 translate-y-10">
+        <div className={`transition-all duration-1000 ${ fadeUp ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"  }`}>
           <div className="text-center mt-16">
             <div className="inline-flex items-center gap-4 px-8 py-4 bg-white rounded-2xl shadow-lg">
               <div className="flex items-center gap-1">

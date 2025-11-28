@@ -1,15 +1,21 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import heroLarge from '../../assets/images/hero-large.webp';
 import heroMedium from '../../assets/images/hero-medium.webp';
 import heroSmall from '../../assets/images/hero-small.webp';
 
-export default function Relative({ onNavigate }) {
-    const navigate = useNavigate();
+export default function Relative() {
+  const navigate = useNavigate();
+  const [fadeUp, setFadeUp] = useState(false);
 
   const goContact = () => {
     navigate(`/?scroll=contact`);
   };
+
+  useEffect(() => {
+    const timer = setTimeout(() => setFadeUp(true), 100);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <section className="relative min-h-[120vh] md:h-screen overflow-hidden items-center">
@@ -24,7 +30,7 @@ export default function Relative({ onNavigate }) {
       </div>
       <div className="relative z-10 h-full flex items-center">
         <div className="max-w-7xl mx-auto px-6 text-white">
-          <div className="transition-all duration-1000 opacity-100 translate-y-0">
+          <div className={`transition-all duration-1000 ${ fadeUp ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"  }`}>
             <div className="max-w-3xl">
               <div className="flex items-center gap-2 mb-6">
                 <div className="px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full border border-white/30">
