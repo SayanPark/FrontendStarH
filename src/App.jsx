@@ -1,4 +1,4 @@
-import { Route, Routes, HashRouter } from "react-router-dom";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
 
 // from elements
 import Head from "./components/elements/Head";
@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-    <HashRouter>
+    <BrowserRouter basename="/FrontendStarH">
       <Head />
       <Navbar />
       
@@ -25,7 +25,7 @@ function App() {
 
       <Footer />
       <Scripts />
-    </HashRouter>
+    </BrowserRouter>
       
     </>
   )
